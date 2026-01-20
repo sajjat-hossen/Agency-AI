@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { Hero } from './components/Hero';
 import Navbar from './components/Navbar';
+import { TrustedBy } from './components/TrustedBy';
 
 export default function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(
@@ -12,6 +14,8 @@ export default function App() {
         theme={theme}
         setTheme={setTheme}
       />
+      <Hero></Hero>
+      <TrustedBy></TrustedBy>
     </div>
   );
 }
