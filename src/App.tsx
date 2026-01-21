@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import OurWork from './components/OurWork';
@@ -24,6 +25,7 @@ const App = () => {
       <OurWork />
       <Teams />
       <ContactUs />
+      <Footer theme={theme} />
     </div>
   );
 };
