@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import OurWork from './components/OurWork';
 import Services from './components/Services';
 import TrustedBy from './components/TrustedBy';
 
@@ -18,6 +19,7 @@ const App = () => {
       <Hero></Hero>
       <TrustedBy></TrustedBy>
       <Services></Services>
+      <OurWork></OurWork>
     </div>
   );
 };
