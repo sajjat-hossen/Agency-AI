@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ContactUs from './components/ContactUs';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import OurWork from './components/OurWork';
@@ -22,6 +23,7 @@ const App = () => {
       <Services />
       <OurWork />
       <Teams />
+      <ContactUs />
     </div>
   );
 };
