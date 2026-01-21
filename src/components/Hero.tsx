@@ -1,6 +1,6 @@
 import assets from '../assets/assets';
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div
       id="hero"
@@ -42,3 +42,5 @@ export const Hero = () => {
     </div>
   );
 };
+
+export default Hero;

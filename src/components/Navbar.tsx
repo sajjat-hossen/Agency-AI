@@ -7,7 +7,7 @@ interface NavbarProps {
   setTheme: (theme: 'light' | 'dark') => void;
 }
 
-export default function Navbar({ theme, setTheme }: NavbarProps) {
+const Navbar = ({ theme, setTheme }: NavbarProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -78,4 +78,6 @@ export default function Navbar({ theme, setTheme }: NavbarProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;

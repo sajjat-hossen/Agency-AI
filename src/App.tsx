@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Hero } from './components/Hero';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import { TrustedBy } from './components/TrustedBy';
+import Services from './components/Services';
+import TrustedBy from './components/TrustedBy';
 
-export default function App() {
+const App = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(
     localStorage.getItem('theme') ? (localStorage.getItem('theme') as 'light' | 'dark') : 'light'
   );
@@ -16,6 +17,9 @@ export default function App() {
       />
       <Hero></Hero>
       <TrustedBy></TrustedBy>
+      <Services></Services>
     </div>
   );
-}
+};
+
+export default App;
